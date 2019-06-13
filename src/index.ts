@@ -1,10 +1,8 @@
-import Boom from './Boom';
+import Phrase from './Phrase';
 
-const hello = (b: Boom) => {
-	return b.name;
-};
-
-const main = document.getElementById('foo');
-if (main) {
-	main.textContent = hello({name: 'Hello boom'});
+function genHello(ph: Phrase): string {
+	return ph.name;
 }
+
+const foo = <HTMLElement>document.getElementById('foo');
+foo.textContent = genHello({name: 'Hello there'});
