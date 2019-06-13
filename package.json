@@ -1,4 +1,9 @@
 {
+
+	"name": "parcel-typescript-experiments",
+	"version": "1.0.0",
+	"description": "TypeScript app with Parcel bundler.",
+	"main": "lib/parcel-typescript-example.js",
 	"directories": {
 		"lib": "lib",
 		"test": "test"
@@ -8,10 +13,6 @@
 		"lib/",
 		"src/"
 	],
-	"name": "parcel-typescript",
-	"version": "1.0.0",
-	"description": "TypeScript app with Parcel bundler.",
-	"main": "lib/parcel-typescript-example.js",
 	"scripts": {
 		"start": "parcel serve src/index.html --port 3000",
 		"build": "cross-env NODE_ENV=production parcel build --out-dir build src/index.html --public-url .",
