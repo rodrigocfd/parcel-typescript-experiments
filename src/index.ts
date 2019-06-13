@@ -1,13 +1,5 @@
-import Phrase from './Phrase';
-import bubble from './bubble.html';
+import GreenText from './GreenText';
 
-function genHello(ph: Phrase): string {
-	return ph.name;
-}
-
-const foo = <HTMLElement>document.getElementById('foo');
-foo.textContent = genHello({name: 'Hello there'});
-
-let bubbleDiv = document.createElement('div');
-bubbleDiv.innerHTML = bubble;
-foo.appendChild(bubbleDiv);
+let greenTexts = [new GreenText(), new GreenText()];
+greenTexts[0].loadInto('greenText0');
+greenTexts[1].loadInto('greenText1');
