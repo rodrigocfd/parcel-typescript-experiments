@@ -1,5 +1,4 @@
 {
-
 	"name": "parcel-typescript-experiments",
 	"version": "1.0.0",
 	"description": "TypeScript app with Parcel bundler.",
@@ -24,6 +23,6 @@
 		"cross-env": "^5.2.0",
 		"gh-pages": "^2.0.1",
 		"parcel-bundler": "^1.12.3",
-		"typescript": "^3.5.1"
+		"typescript": "^3.5.2"
 	}
 }
