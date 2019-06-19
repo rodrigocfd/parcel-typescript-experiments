@@ -1,4 +1,4 @@
-import GreenText from './GreenText';
+import GreenText from './compos/GreenText';
 
 let greenTexts = [new GreenText(), new GreenText()];
 greenTexts[0].loadInto('greenText0');
