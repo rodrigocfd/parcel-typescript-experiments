@@ -1,9 +1,9 @@
 import TemplateBase from './TemplateBase';
-import htmlText from './GreenText.html';
+import htmlTextTemplate from './GreenText.html';
 
 export default class GreenText extends TemplateBase {
 	constructor() {
-		super(htmlText);
+		super(htmlTextTemplate);
 	}
 
 	setName(name: string) {

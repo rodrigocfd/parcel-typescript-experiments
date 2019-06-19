@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
-import GreenText from './compos/GreenText';
+import BoldRed from './components/BoldRed';
+import GreenText from './components/GreenText';
 
 $(() => {
 	let greenTexts = [new GreenText(), new GreenText()];
@@ -9,4 +10,8 @@ $(() => {
 
 	greenTexts[0].setName('foo');
 	greenTexts[1].setName('bar');
+
+	let boldRed = new BoldRed();
+	boldRed.loadInto('red');
+	boldRed.setText('dancing');
 });
