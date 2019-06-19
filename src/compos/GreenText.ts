@@ -7,7 +7,6 @@ export default class GreenText extends TemplateBase {
 	}
 
 	setName(name: string) {
-		const divName = this.elemByClass('name');
-		divName.innerHTML = name;
+		this.$obj.find('.name').text(name);
 	}
 }
