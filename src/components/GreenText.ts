@@ -1,4 +1,4 @@
-import TemplateBase from './TemplateBase';
+import TemplateBase from '../lib/TemplateBase';
 import htmlTextTemplate from './GreenText.html';
 
 export default class GreenText extends TemplateBase {

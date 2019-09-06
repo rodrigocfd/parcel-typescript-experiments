@@ -1,4 +1,4 @@
-import TemplateBase from './TemplateBase';
+import TemplateBase from '../lib/TemplateBase';
 import htmlTextTemplate from './BoldRed.html';
 
 export default class BoldRed extends TemplateBase {
