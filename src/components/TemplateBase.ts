@@ -1,14 +1,14 @@
-import $ from 'jquery';
-
 export default class TemplateBase {
-	protected $obj: JQuery = $();
+	protected elem: Element;
 
 	/**
 	 * Creates the HTML node by parsing the HTML string content.
 	 * @param htmlTemplate HTML string to be parsed.
 	 */
 	constructor(htmlTemplate: string) {
-		this.$obj = $(htmlTemplate);
+		let ghost = document.createElement('div');
+		ghost.innerHTML = htmlTemplate;
+		this.elem = ghost.children[0];
 	}
 
 	/**
@@ -16,6 +16,7 @@ export default class TemplateBase {
 	 * @param divId ID of target div, which will host the content.
 	 */
 	loadInto(divId: string) {
-		$('#' + divId).append(this.$obj);
+		let parent = document.querySelector(`#${divId}`);
+		parent!.appendChild(this.elem as Node);
 	}
 }

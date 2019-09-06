@@ -7,6 +7,6 @@ export default class BoldRed extends TemplateBase {
 	}
 
 	setText(text: string) {
-		this.$obj.find('.name').text(text);
+		this.elem.querySelector('.name')!.innerHTML = text;
 	}
 }

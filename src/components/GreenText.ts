@@ -7,6 +7,6 @@ export default class GreenText extends TemplateBase {
 	}
 
 	setName(name: string) {
-		this.$obj.find('.name').text(name);
+		this.elem.querySelector('.name')!.innerHTML = name;
 	}
 }
