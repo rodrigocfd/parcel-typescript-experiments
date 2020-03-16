@@ -20,11 +20,11 @@
 		"deploy": "gh-pages -d dist"
 	},
 	"devDependencies": {
-		"cross-env": "^5.2.1",
-		"gh-pages": "^2.1.1",
-		"parcel-bundler": "^1.12.3",
-		"sass": "^1.23.0-module.beta.1",
-		"typescript": "^3.6.2"
+		"cross-env": "^7.0.2",
+		"gh-pages": "^2.2.0",
+		"parcel-bundler": "^1.12.4",
+		"sass": "^1.26.3",
+		"typescript": "^3.8.3"
 	},
 	"dependencies": {}
 }
